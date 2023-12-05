@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    color: whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.hidden {
+    display: none;
+}
+
+.visual-hidden {
+    visibility: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#top-container {
+    display:flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    height: 10vh;
+}
+
+#weather-wrap{
+    display: flex;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    margin-right:1rem; 
+}
+
+#weather-wrap-main{
+    display: flex;
+    justify-content: center;
+    margin-right:1rem; 
+}
+
+#weather-wrap:hover {
+    cursor: pointer;
+}
+
+#weather-detail {
+    position:absolute;
+    box-sizing: content-box;
+    padding:20px;
+    top:6.5rem;
+    right:2rem;
+    border:1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    width:25rem;
+    height:9rem;
+    color:black;
+}
+#weather-info-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+#weather-info-wrap-icon{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+}
+
+#weather-info-wrap-detail {
+    margin-right:1rem;
+}
+#weather-info-wrap-detail div span:first-child {
+    color:gray;
+}
+#weather-info-wrap-detail div span:last-child{
+    margin-left: 4px;
+
+}
+
+#temp-wrap{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#middle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+#greeting-container {
+    display: flex;
+    align-items: center;
+}
+#greeting-toggle {
+    padding:0;
+    font-size:2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 25px;
+    line-height: 3rem;
+    transition: all ease 0.8s;
+    align-items: center;
+    text-align: center;
+    margin-left:0.8rem;
+}
+#greeting-toggle:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#clock {
+    font-size: 11rem;
+}
+
+#qs-name {
+    font-size: 4rem;
+}
+
+#greeting {
+    font-size: 4rem;
+}
+
+#login-form input {
+    text-align: center;
+    color:white;
+    font-size:4rem;
+    width:30rem;
+    height:3rem;
+    margin-top: 1rem;
+    border: none;
+    border-bottom: 0.2rem solid white;
+    background-color: transparent; /*투명한 바탕*/
+    outline: none; /* 파란색 포커스 효과 없앰 */
+    caret-color: white; /* 흰색 커서 설정 */
+}
+
+#bottom-container {
+    display: flex;
+    position:relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    
+}
+
+#quotes span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: auto;
+}
+
+#todo-toggle {
+    padding:0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left:auto;
+    margin-right: 3rem;
+    cursor: pointer;
+}
+
+
+#todo-box {
+    display: inline-block;
+    position:absolute;
+    box-sizing: content-box;
+    padding:10px;
+    border-radius: 7px;
+    bottom:3.8rem;
+    right:3rem;
+    width:250px;
+    border:1px solid white;
+    background-color: white;
+    color: black;
+    max-height: 20rem;
+    overflow-y: scroll;
+}
+
+#todo-box input {
+    border: none;
+    outline: none; 
+    font-size:1rem;
+}
+#todo-box ul {
+    padding: 0;
+}
+#todo-box li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:1.1rem;
+    font-weight: normal;
+    text-align: left;
+}
+
+#todo-list li button {
+    margin-left:1rem;
+    color: black;
+    background-color: rgb(255, 255, 255, 0.1);
+    border: none;
+}
+#todo-list li button:hover {
+    cursor: pointer;
+}
+
+input:checked + span {
+    text-decoration: line-through;
+    color: rgb(197, 197, 197);
+}
+
+
+  
